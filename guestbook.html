@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/JavaScript" src="js/script.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <header>
+                <h1>My Online Portfolio</h1>
+            </header>
+
+            <!-- <hr/> -->
+
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="guestbook.html">Guestbook</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <li><a href="index2.html">Layout 1</a></li>
+                        <li><a href="index3.html">Layout 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section>
+                <header>
+                    <h2>Guest Book</h2>
+                </header>
+                <div>
+                    <article>
+                        <form name="guestForm" id="guestForm" action="" method="post">
+                            <table cellpadding="10px">
+                                <tr>
+                                    <td colspan="2">
+                                        <select id="color" onchange="changeBg()">
+                                            <option value="PaleGreen">Pale Green</option>
+                                            <option value="Lavender">Lavender</option>
+                                            <option value="PowderBlue" selected>Powder Blue</option>
+                                            <option value="Tan">Tan</option>
+                                        </select>
+                                        
+                                        <select name="visitSite" onchange="site(this.value)">
+                                            <option value="https://utem.edu.my/" selected>UTeM</option>
+                                            <option value="https://www.facebook.com/">Facebook</option>
+                                            <option value="https://www.google.com/">Google</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>First Name: </label></td>
+                                    <td>
+                                        <input type="text" id="guestFName" name="guestFName" placeholder="Your first name" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Last Name: </label></td>
+                                    <td>
+                                        <input type="text" id="guestLName" name="guestLName" placeholder="Your last name" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Address: </td>
+                                    <td>
+                                        <textarea id="guestAddress" name="guestAddress" placeholder="Your address" required></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Gender: </label></td>
+                                    <td>
+                                        <input type="radio" name="guestGender" value="Female" checked/>FEMALE
+                                        <input type="radio" name="guestGender" value="Male"/>MALE
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Email: </label></td>
+                                    <td>
+                                        <input type="email" id="guestEmail" name="guestEmail" placeholder="Your email" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Comment: </td>
+                                    <td>
+                                        <textarea id="guestComment" name="guestComment" placeholder="Message" required></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>My Favourite Site: </label></td>
+                                    <td>
+                                        <input type="checkbox" name="guestSite" value="https://utem.edu.my/" />UTeM Page
+                                        <input type="checkbox" name="guestSite" value="https://www.facebook.com/" />Facebook Page
+                                        <input type="checkbox" name="guestSite" value="https://www.google.com/" />Google Page
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="button" id="submitButton" onclick="displayGuest();">PROCESS</button>
+                                        <button type="reset" id="resetButton" onclick="resetDisplay();">CLEAR</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </article>
+                    <article id="result">
+                        <h3>Guest</h3>
+                        <p id="resultDate"></p>
+                        <p id="resultGuestFName"></p>
+                        <p id="resultGuestLName"></p>
+                        <p id="resultGuestAddress"></p>
+                        <p id="resultGuestGender"></p>
+                        <p id="resultGuestEmail"></p>
+                        <p id="resultGuestComment"></p>
+                        <p id="resultGuestSite"></p>
+                    </article>
+                </div>
+            </section>
+
+            <hr/>
+
+            <footer>
+                <a href="https://twitter.com/?lang=zh">
+                    <img src="image/twit-color.png" alt="twitter" id="twit" onmouseover="changeImage('twit', 'image/twit-black.png');" onmouseleave="changeImage('twit', 'image/twit-color.png');">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100008131185452&mibextid=ZbWKwL">
+                    <img src="image/fb-color.png" alt="facebook" id="fb" onmouseover="changeImage('fb', 'image/fb-black.png');" onmouseleave="changeImage('fb', 'image/fb-color.png');">
+                </a>
+                <a href="https://instagram.com/jknzyu?igshid=OGQ5ZDc2ODk2ZA==">
+                    <img src="image/insta-color.png" alt="instagram" id="insta" onmouseover="changeImage('insta', 'image/insta-black.png');" onmouseleave="changeImage('insta', 'image/insta-color.png');" />
+                </a>
+                <a href="https://www.youtube.com/@yuqingui7524">
+                    <img src="image/ytb-color.png" alt="youtube" id="ytb" onmouseover="changeImage('ytb', 'image/ytb-black.png');" onmouseleave="changeImage('ytb', 'image/ytb-color.png');" />
+                </a>
+                <h5>Copyright &copy; b032220008@student.utem.edu.my | 2023</h5>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

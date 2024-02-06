@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/JavaScript" src="js/script.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <header>
+                <h1>My Online Portfolio</h1>
+            </header>
+
+            <!-- <hr/> -->
+
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="guestbook.html">Guestbook</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <li><a href="index2.html">Layout 1</a></li>
+                        <li><a href="index3.html">Layout 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section>
+                <header>
+                    <h2>Contact Me</h2>
+                    <p><strong>Please add your contact details here.</strong></p>
+                </header>
+                <article>
+                    <form action="form.html" method="post">
+                        <div> 
+                            <label>Name :</label>
+                            <input type="text" id="conName" name="conName" placeholder="Your Full Name" required />
+                        </div>
+                        <br/>
+
+                        <div>
+                            <label>Age :</label>
+                            <input type="number" id="conAge" name="conAge" min="18" max="60" placeholder="Age" required />   
+                        </div>
+                        <br/>
+
+                        <div>
+                            <label>Date of Birth :</label>
+                            <input type="date" name="conDOB" id="conDOB" required />
+                        </div>
+                        <br/>
+                        
+                        <div>
+                            <label for="telField">Mobile Number :</label>
+                            <input type="tel" name="conTel" id="conTel" placeholder="01x-xxxxxxx" required />
+                        </div>
+                        <br/>
+                        
+                        <div>
+                            <label>Country :</label>
+                            <select id="conCountry">
+                                <option value="Malaysia" selected>Malaysia</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Dubai">Dubai</option>
+                            </select>
+                        </div>
+                        <br/>
+
+                        <div>
+                            <label>Gender :</label>
+                            <input type="radio" name="conGender" id="conGender" value="Male" checked /> Male
+                            <input type="radio" name="conGender" id="conGender" value="Female" /> Female   
+                        </div>
+                        <br/>
+
+                        <div>
+                            <label>Email :</label>
+                            <input type="email" name="conEmail" id="conEmail" placeholder="Enter your email address" required />
+                        </div>
+                        <br/>
+
+                        <div>
+                            <label>Personal / Company Website :</label>
+                            <input type="url" name="conWeb" id="conWeb" placeholder="Enter your URL" required />
+                        </div>
+                        <br/>
+
+                        <div>
+                            <label>Preffered method of contact :</label>
+                            <input type="checkbox" name="conContact" id="conContact" value="Phone" /> Phone
+                            <input type="checkbox" name="conContact" id="conContact" value="Email" /> Email
+                        </div>
+                        <br/>
+                        
+                        <div>
+                            <label>Message :</label>
+                            <textarea name="conMessage" id="conMessage" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <br/>
+
+                        <div>
+                            <button type="button" name="submit" onclick="saveContactDetails();">Submit Form</button>
+                            <button type="reset" name="clear">Clear Form</button>
+                        </div>
+                        
+                    </form>
+                </article>
+            </section>
+
+            <hr/>
+
+            <footer>
+                <a href="https://twitter.com/">
+                    <img src="image/twit-color.png" alt="twitter" id="twit" onmouseover="changeImage('twit', 'image/twit-black.png');" onmouseleave="changeImage('twit', 'image/twit-color.png');">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100008131185452&mibextid=ZbWKwL">
+                    <img src="image/fb-color.png" alt="facebook" id="fb" onmouseover="changeImage('fb', 'image/fb-black.png');" onmouseleave="changeImage('fb', 'image/fb-color.png');">
+                </a>
+                <a href="https://instagram.com/jknzyu?igshid=OGQ5ZDc2ODk2ZA==">
+                    <img src="image/insta-color.png" alt="instagram" id="insta" onmouseover="changeImage('insta', 'image/insta-black.png');" onmouseleave="changeImage('insta', 'image/insta-color.png');" />
+                </a>
+                <a href="https://www.youtube.com/@yuqingui7524">
+                    <img src="image/ytb-color.png" alt="youtube" id="ytb" onmouseover="changeImage('ytb', 'image/ytb-black.png');" onmouseleave="changeImage('ytb', 'image/ytb-color.png');" />
+                </a>
+                <h5>Copyright &copy; b032220008@student.utem.edu.my | 2023</h5>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>

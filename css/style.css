@@ -1,0 +1,172 @@
+body {
+    font-family: verdana;
+}
+
+#wrapper {
+    margin: 2px;
+    background-color: powderBlue;
+}
+
+header {
+    background-color: #74bec1;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+footer {
+    background-color: #74bec1;
+    text-align: center;
+}
+
+footer img {
+    width: 10%;
+}
+
+footer h5 {
+    text-align: right;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #74bec1;
+}
+
+footer a:visited {
+    background-color: #74bec1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 10px 2px;
+}
+
+nav li a {
+    border: 1px solid #406d6e;
+    color: #294e4e;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #294e4e;;
+    color: powderBlue;
+}
+
+a:active {
+    color: red;
+}
+
+.img {
+    width: 200px;
+    margin: 2px;
+}
+
+.radius {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 3% */
+}
+
+.size {
+    width: 300px;
+    margin: 2px;
+}
+
+table {
+    border: 1px solid rgba(128, 128, 128, 0.644);
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(odd) {
+    background-color: #74bec1;
+}
+
+article {
+    margin: 2%;
+}
+
+#result {
+    display: none;
+}
+
+#topButton {
+    background-color: #294e4e;
+    color: powderblue;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.language {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill li {
+    margin-bottom: 3%;
+}
+
+.slider {
+    appearance: none;
+    width: 50%;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 25px;
+    border: 1px solid #74bec1;
+    background: rgb(46, 97, 139);
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track {
+    background-color: #74bec1;
+}
+
+.mediaCenter {
+    margin: 0 auto; 
+    display: block;
+}
+
+button {
+    width: 30%;
+    padding: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: powderblue;
+    border: 1px solid #22393a;
+    color: #22393a;
+}

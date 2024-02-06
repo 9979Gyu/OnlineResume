@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <title>Canvas</title>
+    </head>
+
+    <body>
+        <canvas id="logoCanvas" width="200" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById('logoCanvas');
+            var ctx = canvas.getContext('2d');
+
+            // Draw a circle
+            ctx.beginPath();
+            ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+            ctx.fillStyle = "seagreen";
+            ctx.fill();
+            ctx.lineWidth = 3;
+            
+            // Draw text in the circle
+            ctx.font = "24px Arial";
+            ctx.fillStyle = "white";
+            ctx.strokeStyle = "white";
+            ctx.stroke();
+            ctx.textAlign = "center";
+            ctx.textBaseLine = "middle";
+            ctx.fillText('Yuqin', 100, 100);
+        </script>
+
+        <svg width="200" height="200">
+            <polygon
+            points="100, 10 40, 198, 190, 78, 10, 78, 160, 198"
+            style="
+                fill: seagreen;
+                stroke: white;
+                stroke-width: 3;
+                fill-rule: evenodd;"
+            />
+            <circle
+            cx="100"
+            cy="110"
+            r="50"
+            stroke="white"
+            stroke-width="3"
+            fill="seagreen"
+            />
+            <text fill="white" font-size="24" font-family="arial" x="60" y="120">
+                YUQIN
+            </text>
+        </svg>
+    </body>
+
+</html>

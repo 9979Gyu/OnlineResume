@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/JavaScript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <button id="topButton" type="button" onclick="toTop();">^</button>
+        <div id="wrapper">
+            <header>
+                <h1>My Online Portfolio</h1>
+                <!-- <hr/> -->
+            </header>
+
+            <aside>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="guestbook.html">Guestbook</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <li><a href="index2.html">Layout 1</a></li>
+                        <li><a href="index3.html">Layout 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section id="main" class="skill">
+                <header>
+                    <h2>My Skills</h2>
+                </header>
+                <article>
+                    <div>
+                        <a href="#project">Project</a> | 
+                        <a href="#language">Language</a> | 
+                        <a href="#programming">Programming</a> | 
+                        <a href="#internship">Internship</a> | 
+                        <a href="#activities">Activities</a> | 
+                        <a href="#award">Award & Honor</a>
+
+                        <h3 id="project">Projects</h3>
+                        <ol>
+                            <li>Airport Luggage Handling (April 2023 - Jun 2023)</li>
+                            <ul>
+                                <li>Developed a backend using Java.</li>
+                            </ul>
+                            <li>Prim Asrama (July 2022 - Sept 2022)</li>
+                            <ul>
+                                <li>Developed a full-stack web application using Laravel framework.</li>
+                            </ul>
+                            <li>Threshold Food (March 2021 - April 2021)</li>
+                            <ul>
+                                <li>Developed a full-stack web application using HTML, CSS, JavaScript and PHP.</li>
+                            </ul>
+                        </ol>
+
+                        <br />
+                        <!-- <a href="#main">back to top</a> -->
+
+                        <h3 id="language">Speaking/Writing Languages</h3>
+                        <ol class="language">
+                            <li>
+                                <label>Mandarin 90% <br /></label>
+                                <input type="range" class="slider" name="mandarin" id="mandarin" min="1" max="100" value="90" readonly disabled/>
+                            </li>
+                            <li>
+                                <label>Malay 75%<br /></label>
+                                <input type="range" class="slider" name="malay" id="malay" min="1" max="100" value="75" readonly disabled/>
+                            </li>
+                            <li>
+                                <label>English 75%<br /></label>
+                                <input type="range" class="slider" name="english" id="english" min="1" max="100" value="75" readonly disabled/>
+                            </li>
+                            <li>
+                                <label>German 30% <br /></label>
+                                <input type="range" class="slider" name="german" id="german" min="1" max="100" value="30" readonly disabled/>
+                            </li>
+                        </ol>
+
+                        <br />
+                        <!-- <a href="#main">back to top</a> -->
+
+                        <h3 id="programming">Programming Languages</h3>
+                        <ol>
+                            <li>Programming Languages: Java, JavaScript, C++, C#, PHP, Dart</li>
+                            <li>Web Development: HTML, CSS</li>
+                            <li>Databases: MySQL, Oracle SQL, Microsoft SQL Server</li>
+                            <li>Tools and Technologies: Git, REST APIs</li>
+                            <li>Software & Frameworks: Bootstrap, Laravel, Flutter</li>
+                            <li>Problem Solving: Data Structure and Algorithms</li>
+                            <li>Operating System: Windows, Linux, Android</li>
+                        </ol>
+
+                        <br />
+                        <!-- <a href="#main">back to top</a> -->
+
+                        <h3 id="internship">Internship Experience</h3>
+                        <ol>
+                            <li>WAHDAH Technologies Sdn Bhd</li>
+                            <ul>
+                                <li>Duration: 18 July 2022 - 23 Sept 2022</li>
+                                <li>Department: Technical</li>
+                            </ul>
+                        </ol>
+
+                        <br />
+                        <!-- <a href="#main">back to top</a> -->
+
+                        <h3 id="activities">Activities</h3>
+                        <ol>
+                            <li>Attended the Web Interface online training course</li>
+                            <li>Attended the Winform online training course</li>
+                            <li>Member of External Relationship Executive Committee of ASCII UTeM</li>
+                            <li>Attended Worldskills Competition under Web Design section</li>
+                            <li>Volunteer at Pusat Konservasi & Penerangan Penyu Melaka</li>
+                            <li>Attended DbWizard (Database Mastery Mission) Competition</li>
+                        </ol>
+
+                        <br />
+                        <!-- <a href="#main">back to top</a> -->
+
+                        <h3 id="award">Award & Honor</h3>
+                        <ol>
+                            <li>First Place in DbWizard Competition</li>
+                            <li>DEAN's List Receiver</li>
+                        </ol>
+
+                        <br />
+                        <!-- <a href="#main">back to top</a> -->
+
+                    </div>
+                </article>
+                
+            </section>
+
+            <hr/>
+
+            <footer>
+                <a href="https://twitter.com/?lang=zh">
+                    <img src="image/twit-color.png" alt="twitter" id="twit" onmouseover="changeImage('twit', 'image/twit-black.png');" onmouseleave="changeImage('twit', 'image/twit-color.png');">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100008131185452&mibextid=ZbWKwL">
+                    <img src="image/fb-color.png" alt="facebook" id="fb" onmouseover="changeImage('fb', 'image/fb-black.png');" onmouseleave="changeImage('fb', 'image/fb-color.png');">
+                </a>
+                <a href="https://instagram.com/jknzyu?igshid=OGQ5ZDc2ODk2ZA==">
+                    <img src="image/insta-color.png" alt="instagram" id="insta" onmouseover="changeImage('insta', 'image/insta-black.png');" onmouseleave="changeImage('insta', 'image/insta-color.png');" />
+                </a>
+                <a href="https://www.youtube.com/@yuqingui7524">
+                    <img src="image/ytb-color.png" alt="youtube" id="ytb" onmouseover="changeImage('ytb', 'image/ytb-black.png');" onmouseleave="changeImage('ytb', 'image/ytb-color.png');" />
+                </a>
+                <h5>Copyright &copy; b032220008@student.utem.edu.my | 2023</h5>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
